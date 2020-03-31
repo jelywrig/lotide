@@ -23,9 +23,8 @@ const flatten = function(masterArray) {
   let result = [];
   for (let elem of masterArray) {
     if(Array.isArray(elem)) {
-      for (let item of elem) {
-        result.push(item);
-      }
+      console.log('flattened elem: ', flatten(elem));
+      result = result.concat(flatten(elem));
     } else {
       result.push(elem);
     }
@@ -34,5 +33,5 @@ const flatten = function(masterArray) {
 }
 
 
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten([1, 2, [3, [4]], 5, [6]]), [1, 2, 3, 4, 5, 6]);
 
