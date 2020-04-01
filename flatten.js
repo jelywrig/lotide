@@ -23,7 +23,6 @@ const flatten = function(masterArray) {
   let result = [];
   for (let elem of masterArray) {
     if(Array.isArray(elem)) {
-      console.log('flattened elem: ', flatten(elem));
       result = result.concat(flatten(elem));
     } else {
       result.push(elem);
