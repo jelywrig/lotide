@@ -27,4 +27,4 @@ if(require.main === module) {
   assertEqual(eqArrays([1,2,3], [1,2,4]), false);
 }
 
-module.export = eqArrays;
+module.exports = eqArrays;
