@@ -15,12 +15,6 @@ const countLetters = function(string) {
 }
 
 
+module.exports = countLetters;
 
-
-
-
-
-
-
-
-console.log(countLetters("hello i am a string"));
+// console.log(countLetters("hello i am a string"));
