@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jelywrig/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "learning project - mini clone of lodash ",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/jelywrig/lotide.git"
   },
-  "author": "",
+  "author": "Jessie Wright",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jelywrig/lotide/issues"
